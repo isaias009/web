@@ -1,0 +1,138 @@
+.portada{
+	background:url('../img/portada.jpg');
+	background-size:cover;
+	background-position:center center;
+	height:280px;
+	border-bottom:solid 6px #1d8348;
+}
+
+.perfil-portada img{
+	width:150px;
+	height:150px;
+	margin-top:-100px;
+	border-radius:100%; 
+	box-shadow:5px 5px 15px rgba(0,0,0, .4);
+}
+
+.perfil-portada .nombre{
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.perfil-portada .nombre cite{
+	font-size:14px;
+}
+
+.portada .descripcion{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:space-around;
+	background:rgba(0,0,0, .6);
+}
+
+.portada .descripcion div{
+	color:white;
+	font-size:20px;
+	margin-top:100px;
+	text-align:center;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+.paginas{
+	display:flex;
+	border-top:solid 3px #1d8348;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	width:100%;
+	padding:10px;
+	max-width:1000px;
+	margin:auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.paginas article{
+	width:50%;
+	margin-top:35px;
+	padding:20px;
+	background:white;
+	border:solid 2px #f1f1f1;
+}
+
+.paginas article h2{
+	padding:10px;
+}
+
+.paginas article p{
+	padding:12px;
+}
+
+.paginas article img{
+	width:100%;
+}
+
+.paginas article .btn{
+	padding:12px;
+	display:block;
+	background:#1d8348;
+	color:white; 
+	text-align:center;
+	text-decoration:none;
+}
+
+.about{
+	width:98%;
+	border-top:solid 3px #1d8348;
+	max-width:1000px;
+	margin:auto;
+	padding:30px;
+	align-items:center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.about div{
+	padding:10px;
+}
+
+.about img{
+	width:300px;
+	height:300px;
+	display:block;
+	margin:auto;
+	border-radius:100%;
+}
+
+.about p{
+	padding:20px;
+	font-size:18px;
+}
+
+.titulo{
+	width:100%;
+	margin-top:20px;
+	padding:10px;
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+footer{
+	width:100%;
+	background:#000;
+	text-align:center;
+	padding:20px;
+	color:white;
+	margin-top:50px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+@media screen and (max-width:700px){
+
+	.paginas article{
+		width:100%;
+	}
+
+}

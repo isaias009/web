@@ -1,0 +1,117 @@
+header{
+	display:flex;
+	width:100%;
+	justify-content:space-around;
+	align-items:center;
+	color:white;
+	position:fixed;
+	z-index:1000;
+	background:black;
+	box-shadow:3px 3px 3px rgba(0,0,0, .5);
+}
+
+header .logo{
+	font-size:24px;
+	padding:20px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header nav{
+	display:flex;
+	justify-content:space-around;
+}
+
+header nav a{
+	display:block;
+	color:white;
+	background:#1e8449;
+	padding:10px;
+	border-radius:5px;
+	text-decoration:none;
+	margin-left:15px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header nav a:hover{
+	opacity:.5;
+}
+
+.contenedor{
+	padding-top:100px;
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	max-width:1000px;
+	margin:auto;
+}
+
+.contenedor .articulos{
+	width:60%;
+}
+
+.contenedor .articulos article{
+	width:98%;
+	margin-top:20px;
+	background:white;
+	border-radius:5px;
+	box-shadow:3px 3px 3px rgba(0,0,0, .1);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor .articulos article h2{padding:6px}
+.contenedor .articulos article p{padding:12px}
+
+.contenedor aside{
+	width:30%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor aside div input[type="text"],
+.contenedor aside div input[type="password"]{
+	padding:10px;
+	width:100%;
+	margin-top:10px;
+}
+
+.contenedor aside div input[type="text"]:focus,
+.contenedor aside div input[type="password"]:focus{
+	border:solid 2px #1e8449;
+}
+
+.contenedor aside div input[type="submit"]{
+	margin-top:10px;
+	border:none;
+	background:#1e8449;
+	color:white;
+	padding:10px;
+	cursor:pointer;
+}
+
+.contenedor aside .galeria{
+	display:flex;
+	border-top:solid 2px #1e8449;
+}
+
+.paginacion{
+	width:100%;
+	display:flex;
+	max-width:500px;
+	margin:auto;
+	padding:20px;
+}
+
+.paginacion p{
+	padding:10px;
+	color:white;
+	background:#1e8449;
+	margin-left:10px;
+	border-radius:5px;
+	cursor:pointer; 
+}
+
+footer{
+	background:black;
+	color:white;
+	padding:20px;
+	font-family: 'Montserrat', sans-serif;
+}
