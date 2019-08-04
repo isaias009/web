@@ -1,0 +1,120 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+button:focus,
+input:focus{
+	outline:0px;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+	width:100%;
+	max-width:800px;
+	margin:auto;
+}
+
+header .logo{
+	padding:10px;
+	text-align:center;
+	color:white;
+	font-size:20px;
+	background:rgba(125,60,152);
+}
+
+header nav{
+	width:100%;
+}
+
+header nav #formulario{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+header nav #formulario #materia{
+	width:50%;
+	padding:10px;
+	border:none;
+	font-size:18px;
+	border-bottom:solid 2px rgba(125,60,152);
+}
+
+header nav #formulario #aula{
+	width:16.6666%;
+	border:none;
+	font-size:18px;
+	padding:10px;
+	border-bottom:solid 2px rgba(125,60,152);
+	border-left:solid 3px rgba(125,60,152);
+}
+
+header nav #formulario #dia,
+header nav #formulario #hora{
+	width:16.6666%;
+	border:none;
+	font-size:18px;
+	padding:10px;
+	cursor:pointer;
+	border-bottom:solid 2px rgba(125,60,152);
+	border-left:solid 3px rgba(125,60,152);
+}
+
+header nav #formulario input[type="submit"]{
+	width:100%;
+	cursor:pointer;
+	border:none;
+	font-size:18px;
+	padding:10px;
+}
+
+.horario{
+	width:100%;
+	max-width:800px;
+	margin:auto;
+	text-align:center;
+	margin-top:20px;
+}
+
+.horario .botones{
+	display:flex;
+	justify-content:space-around;
+}
+
+.horario .botones button{
+	padding:10px;
+	width:100%;
+	cursor:pointer;
+	border:none;
+	background:#CB4335;
+	color:white;
+	border-right:solid 1px white;
+}
+
+.horario #tabla td,
+.horario #tabla th{
+	width:114.3px;
+	padding:10px;
+	font-weight:bold;
+	border-right:solid 1px rgba(0,0,0, .2);
+	border-bottom:solid 1px #f2f2f2;
+}
+
+.horario #tabla td button{
+	border:none;
+	padding:5px;
+	border-radius:5px;
+	cursor:pointer;
+	background:#CB4335;
+	color:white;
+	border:solid 1px white;
+}
+
+footer{
+	text-align:center;
+	padding:20px;
+}
