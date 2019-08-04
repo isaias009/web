@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Horario Generator</title>
+	<script src="https://kit.fontawesome.com/118adbf8f9.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jspdf.min.js"></script>
+	<script type="text/javascript" src="js/horario.js"></script>
+
+	
+	<link rel="stylesheet" type="text/css" href="css/horario.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<p>Generador de Horario</p>
+		</div>
+		<nav>
+			<form id="formulario" onsubmit="return true"> 
+
+				<input type="text" id="materia" placeholder="Nombre de materia" autocomplete="off">
+				<input type="text" id="aula" placeholder="Aula" autocomplete="off">
+
+				<select id="dia">
+					<option value="1">LU</option>
+					<option value="2">MA</option>
+					<option value="3">MI</option>
+					<option value="4">JU</option>
+					<option value="5">VI</option>
+					<option value="6">SA</option>
+				</select>
+
+				<select id="hora">
+					<option value="1">6:45</option>
+					<option value="2">8:15</option>
+					<option value="3">9:45</option>
+					<option value="4">11:15</option>
+					<option value="5">12:45</option>
+					<option value="6">14:15</option>
+					<option value="7">15:45</option>
+					<option value="8">17:15</option>
+					<option value="9">18:45</option>
+					<option value="10">20:15</option>
+				</select>
+
+				<input type="submit" value="Guardar">
+			</form>
+		</nav>
+	</header>
+
+
+	<section class="horario" id="content">
+
+		<div class="botones">
+			<button id="borrar">Borrar</button>
+			<button id="borrarAll">Borrar Todo</button>
+		</div>
+
+		<table id="tabla" cellpadding="0" cellspacing="0">
+			<tr>
+				<th>Hora</th>
+				<th>Lunes</th>
+				<th>Martes</th>
+				<th>Miercoles</th>
+				<th>Jueves</th>
+				<th>Viernes</th>
+				<th>Sabado</th>
+			</tr>
+
+			<tr>
+				<td>
+					<p>6:45</p>
+					<p>8:15</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>8:15</p>
+					<p>9:45</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>9:45</p>
+					<p>11:15</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>11:15</p>
+					<p>12:45</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>12:45</p>
+					<p>14:15</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>14:15</p>
+					<p>15:45</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>15:45</p>
+					<p>17:15</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>17:15</p>
+					<p>18:45</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>18:45</p>
+					<p>20:15</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>20:15</p>
+					<p>21:45</p>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+		</table>
+	</section>
+
+	<footer>
+		<p>Creado por Isaias David Chavez Apaza</p>
+	</footer>
+
+</body>
+</html>
